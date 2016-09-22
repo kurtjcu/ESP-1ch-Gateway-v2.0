@@ -71,7 +71,7 @@ uint32_t cp_up_pkt_fwd;
 enum sf_t { SF7=7, SF8, SF9, SF10, SF11, SF12 };
 
 uint8_t MAC_array[6];
-char MAC_char[18];
+char MAC_char[19];								// Store 3 * 6 bytes and the \0 char
 
 /*******************************************************************************
  *
