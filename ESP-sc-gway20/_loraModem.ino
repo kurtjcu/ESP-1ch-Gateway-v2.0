@@ -868,5 +868,3 @@ int receivePacket(uint8_t * buff_up) {
 	
 	return(-1);
 }
-
-

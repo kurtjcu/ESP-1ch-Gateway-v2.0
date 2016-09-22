@@ -140,6 +140,7 @@ String WifiServer(char *cmd, char *arg) {
 	response +="<th style=\"background-color: green; color: white;\">Parameter</th>";
 	response +="<th style=\"background-color: green; color: white;\">Value</th>";
 	response +="</tr>";
+	response +="<tr><td style=\"border: 1px solid black;\">WiFi SSID</td><td style=\"border: 1px solid black;\">"; response+=WiFi.SSID(); response+="</tr>";
 	response +="<tr><td style=\"border: 1px solid black;\">IP Address</td><td style=\"border: 1px solid black;\">"; response+=printIP((IPAddress)WiFi.localIP()); response+="</tr>";
 	response +="<tr><td style=\"border: 1px solid black;\">IP Gateway</td><td style=\"border: 1px solid black;\">"; response+=printIP((IPAddress)WiFi.gatewayIP()); response+="</tr>";
 	response +="<tr><td style=\"border: 1px solid black;\">NTP Server</td><td style=\"border: 1px solid black;\">"; response+=NTP_TIMESERVER; response+="</tr>";
